@@ -3,6 +3,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
+
 module.exports = {
   mode: 'development',
   entry: {
@@ -36,10 +37,6 @@ module.exports = {
       },
     ]),
   ],
-  devServer: {
-    contentBase: path.resolve(__dirname, 'dist')
-  },
-  devtool: 'inline-source-map',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name]'
